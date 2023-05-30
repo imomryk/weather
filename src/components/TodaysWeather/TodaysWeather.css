@@ -13,13 +13,13 @@
     height: 100%;
 }
 .todays-weather-info h1{
-    font-size: 3em;
+    font-size: 300%;
     font-weight: 500;
 }
 .todays-weather-rain{
     flex-grow: 1;
     opacity: 0.6;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .todays-weather-temp{
     font-weight: 700;
