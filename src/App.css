@@ -1,13 +1,11 @@
 .container {
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
   color: #e7e7e7;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* font-size: 1.2vh; */
 }
 main {
     width: 100%;

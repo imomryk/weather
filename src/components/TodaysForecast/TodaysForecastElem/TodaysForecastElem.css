@@ -6,7 +6,6 @@
     align-items: center;
     flex-grow: 1;
     text-align: center;
-    /* border: 1px solid yellow; */
 }
 .todays-forecast-elem-time{
     font-weight: 500;

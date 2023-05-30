@@ -10,7 +10,6 @@ export const TodaysWeather = ({
 	},
 	todayChanceOfRain,
 }) => {
-	// console.log(currentDay);
 	return (
 		<section className='todays-weather'>
 			<div className='todays-weather-info'>
