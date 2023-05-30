@@ -26,27 +26,44 @@ function App() {
 
 	return (
 		<div className='container'>
-			<main>
-				<SearchForm setWeatherData={setWeatherData} />
-				{weatherData ? (
-					<TodaysWeather
-						weatherData={weatherData}
-						todayChanceOfRain={todayChanceOfRain}
-					/>
-				) : (
-					<div>no data</div>
-				)}
-				{weatherData ? <TodaysForecast weatherData={weatherData} /> : <div>no data</div>}
-				{weatherData ? (
-					<TodaysAirConditions
-						weatherData={weatherData}
-						todayChanceOfRain={todayChanceOfRain}
-					/>
-				) : (
-					<div>no data</div>
-				)}
-				{weatherData ? <WeeklyForecast weatherData={weatherData} /> : <div>no data</div>}
-			</main>
+			{weatherData ? (
+				<main>
+					<SearchForm setWeatherData={setWeatherData} />
+					{weatherData ? (
+						<TodaysWeather
+							weatherData={weatherData}
+							todayChanceOfRain={todayChanceOfRain}
+						/>
+					) : (
+						<div>no data</div>
+					)}
+					{weatherData ? <TodaysForecast weatherData={weatherData} /> : <div>no data</div>}
+					{weatherData ? (
+						<TodaysAirConditions
+							weatherData={weatherData}
+							todayChanceOfRain={todayChanceOfRain}
+						/>
+					) : (
+						<div>no data</div>
+					)}
+					{weatherData ? <WeeklyForecast weatherData={weatherData} /> : <div>no data</div>}
+				</main>
+			) : (
+				<div className='lds-spinner'>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			)}
 		</div>
 	);
 }
