@@ -11,7 +11,7 @@ function App() {
 	const [weatherData, setWeatherData] = useState();
 	useEffect(() => {
 		axios
-			.get('http://api.weatherapi.com/v1/forecast.json?key=1f9e26f40fa04906b3f182748232705&q=auto:ip&days=4&aqi=no&alerts=no')
+			.get('https://api.weatherapi.com/v1/forecast.json?key=1f9e26f40fa04906b3f182748232705&q=auto:ip&days=4&aqi=no&alerts=no')
 			.then((responce) => setWeatherData(responce.data));
 	}, []);
 

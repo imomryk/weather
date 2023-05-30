@@ -8,6 +8,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background: rgb(31, 43, 60);
     background: linear-gradient(318deg, rgba(31, 43, 60, 1) 0%, rgba(85, 94, 108, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 

@@ -7,7 +7,7 @@ export const SearchForm = ({ setWeatherData }) => {
 
 	const requestHandler = (e) => {
 		e.preventDefault();
-		axios.get(`http://api.weatherapi.com/v1/forecast.json?key=1f9e26f40fa04906b3f182748232705&q=${query}&days=4&aqi=no&alerts=no`).then((responce) => {
+		axios.get(`https://api.weatherapi.com/v1/forecast.json?key=1f9e26f40fa04906b3f182748232705&q=${query}&days=4&aqi=no&alerts=no`).then((responce) => {
 			setWeatherData(responce.data);
 		});
 	};
@@ -24,7 +24,6 @@ export const SearchForm = ({ setWeatherData }) => {
 			/>
 			<button className='searchButton'>
 				<svg
-					enable-background='new 0 0 32 32'
 					id='Glyph'
 					version='1.1'
 					viewBox='0 0 32 32'
