@@ -28,15 +28,15 @@ main {
     "todays-air-conditions weekly-forecast";
     gap: 20px 30px;
 }
-/* @media screen and ( max-height: 1000px )
+/* @media screen and ( min-height: 1000px )
 {
-   .container{
+   html{
     transform: scale(0.7);
    }
 } */
 
-@media (-webkit-device-pixel-ratio: 1.25) {
+/* @media (-webkit-device-pixel-ratio: 1.25) {
   body {
     transform: scale(0.75);
   }
-}
+} */

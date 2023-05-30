@@ -10,9 +10,16 @@ import './App.css';
 function App() {
 	const [weatherData, setWeatherData] = useState();
 	useEffect(() => {
+		// axios
+		// 	.get('https://api.weatherapi.com/v1/forecast.json?key=1f9e26f40fa04906b3f182748232705&q=auto:ip&days=4&aqi=no&alerts=no')
+		// 	.then((responce) => setWeatherData(responce.data));
 		axios
-			.get('https://api.weatherapi.com/v1/forecast.json?key=1f9e26f40fa04906b3f182748232705&q=auto:ip&days=4&aqi=no&alerts=no')
-			.then((responce) => setWeatherData(responce.data));
+			.get('https://api.ipify.org?format=json')
+			.then((responce) =>
+				axios
+					.get('https://api.weatherapi.com/v1/forecast.json?key=1f9e26f40fa04906b3f182748232705&days=4&aqi=no&alerts=no&q=' + responce.data.ip)
+					.then((responce) => setWeatherData(responce.data))
+			);
 	}, []);
 
 	const todayChanceOfRain = weatherData ? weatherData.forecast.forecastday[0].day.daily_chance_of_rain + '%' : 'no data';
