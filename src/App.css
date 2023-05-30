@@ -3,14 +3,13 @@
   width: 100%;
   margin: 0 auto;
   color: #e7e7e7;
-  height: 100vh;
-  
+  /* height: 100vh; */
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 main {
-    
     width: 100%;
     background: #0b121e;
     border: 1px solid #424954;
@@ -28,5 +27,10 @@ main {
     "todays-air-conditions weekly-forecast";
     gap: 20px 30px;
 }
-
+/* @media screen and ( max-height: 1000px )
+{
+   .container{
+    transform: scale(0.7);
+   }
+} */
 
