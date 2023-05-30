@@ -39,3 +39,10 @@
     background-color: #e7e7e7;
     transition: 700ms;
 }
+
+.error{
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    color: #FF9494;
+}
