@@ -1,4 +1,4 @@
-.todays-forecaste-elem{
+.todays-forecast-elem{
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -7,12 +7,12 @@
     text-align: center;
     /* border: 1px solid yellow; */
 }
-.todays-forecaste-elem-time{
+.todays-forecast-elem-time{
     font-weight: 500;
     opacity: 0.5;
     font-size: 1.1em;
 }
-.todays-forecaste-elem-temp{
+.todays-forecast-elem-temp{
     font-weight: 500;
     font-size: 1.5em;
 }

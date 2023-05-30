@@ -3,26 +3,28 @@
   width: 100%;
   margin: 0 auto;
   color: #e7e7e7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main {
-  background: #0b121e;
-  border: 1px solid #424954;
-  border-radius: 2em;
-  height: 100vh;
-  padding: 30px;
+    width: 100%;
+    background: #0b121e;
+    border: 1px solid #424954;
+    border-radius: 2em;
+  
+    padding: 30px;
 
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  grid-template-rows: max-content 1fr 1fr 1fr;
-  grid-template-areas: 
-  "search-form ."
-  "todays-weather weekly-forecast"
-  "todays_forecast weekly-forecast"
-  "todays-air-conditions weekly-forecast";
-  gap: 20px 30px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: max-content 1fr 1fr 1fr;
+    grid-template-areas: 
+    "search-form ."
+    "todays-weather weekly-forecast"
+    "todays_forecast weekly-forecast"
+    "todays-air-conditions weekly-forecast";
+    gap: 20px 30px;
 
 
 }
-/* main>div, main>section{
-    background-color: whitesmoke;
-} */

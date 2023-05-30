@@ -5,6 +5,7 @@
     
     background-color: #1f2b3c;
     border-radius: 15px;
+    color: #e7e7e7;
 }
 .todays-air-conditions h3{
     font-weight: 500;
@@ -12,11 +13,37 @@
     opacity: 0.5;
     text-align: left;
 }
-.todays-air-conditions>div{
+.todays-air-conditions-grid{
     padding: 20px 5px 5px 10px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 100%;
+}
+.todays-air-conditions-elem{
+    display: flex;
+}
+.todays-air-conditions-elem img{
+    align-self: flex-start;
+    width: 40px;
+}
+.todays-air-conditions-elem-info{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 20px;
+}
+.todays-air-conditions-elem-info>h4{
+    font-weight: 400;
+    font-size: 1.3em;
+    opacity: 0.5;
+
+}
+.todays-air-conditions-elem-info>div{
+    font-size: 2em;
+    font-weight: 700;
+    opacity: 0.8;
+    padding-top: 5px;
+
 }

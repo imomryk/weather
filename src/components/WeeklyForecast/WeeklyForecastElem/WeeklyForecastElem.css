@@ -1,0 +1,40 @@
+.weekly-forecast-elem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+.weekly-forecast-elem-nodata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    width: 100%;
+}
+.weekly-forecast-elem-day{
+    opacity: 0.5;
+    
+    width: 20%;
+}
+.weekly-forecast-elem-condition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.weekly-forecast-elem-condition img{
+    margin-right: 10px;
+}
+.weekly-forecast-elem-condition div{
+    flex-grow: 1;
+    
+    font-size: 0.9em;
+    min-width: 50%;
+}
+.weekly-forecast-elem-temp{
+    margin-left: 20px;
+}
+.weekly-forecast-elem-temp span{
+    opacity: 0.5;
+}
