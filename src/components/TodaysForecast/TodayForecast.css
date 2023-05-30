@@ -1,0 +1,31 @@
+.todays-forecast{
+    grid-area: todays_forecast;
+
+    padding: 25px;
+    
+    background-color: #1f2b3c;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+.todays-forecast h3{
+    font-weight: 500;
+    font-size: 0.8em;
+    opacity: 0.5;
+    text-align: left;
+}
+.todays-forecast-days{
+    padding: 20px 5px 5px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.todays-forecast-days>div{
+    border-right: 1px solid #e7e7e770;
+}
+.todays-forecast-days>div:last-child{
+    border: 0;
+
+}

@@ -1,0 +1,22 @@
+.todays-air-conditions{
+    grid-area: todays-air-conditions;
+
+    padding: 25px;
+    
+    background-color: #1f2b3c;
+    border-radius: 15px;
+}
+.todays-air-conditions h3{
+    font-weight: 500;
+    font-size: 0.8em;
+    opacity: 0.5;
+    text-align: left;
+}
+.todays-air-conditions>div{
+    padding: 20px 5px 5px 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
