@@ -26,3 +26,8 @@
 .weekly-forecast-days>div:last-child{
     border: 0;
 }
+@media screen and (max-width: 480px){
+    .weekly-forecast h3{
+        margin-bottom: 10px;
+    }
+}

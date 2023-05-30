@@ -3,7 +3,6 @@
   width: 100%;
   margin: 0 auto;
   color: #e7e7e7;
-  /* height: 100vh; */
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,9 +14,7 @@ main {
     background: #0b121e;
     border: 1px solid #424954;
     border-radius: 2em;
-  
     padding: 30px;
-
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: max-content 1fr 1fr 1fr;
@@ -28,18 +25,22 @@ main {
     "todays-air-conditions weekly-forecast";
     gap: 20px 30px;
 }
-/* @media screen and ( min-height: 1000px )
-{
-   html{
-    transform: scale(0.7);
-   }
-} */
+@media screen and (max-width: 480px){
+    .container{
+        min-height: 100vh;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        padding: 15px;
+    }
+}
 
-/* @media (-webkit-device-pixel-ratio: 1.25) {
-  body {
-    transform: scale(0.75);
-  }
-} */
+
+
+
+/* preloader */
 .lds-spinner {
   color: official;
   display: inline-block;

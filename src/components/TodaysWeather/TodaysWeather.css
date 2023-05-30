@@ -5,6 +5,7 @@
     align-items: center;
     padding: 10px 30px;
     color: #e7e7e7;
+    
 }
 .todays-weather-info{
     display: flex;
@@ -27,10 +28,36 @@
     vertical-align: middle;
 }
 .todays-weather-img{
-    padding: 50px 20px;
+    padding: 40px 20px;
     height: 100%;
 }
 .todays-weather-img img{
     height: 100%;
     
+}
+
+@media screen and (max-width: 480px){
+    .todays-weather{
+    padding: 5px 15px;
+    height: 150px;
+    
+}
+    .todays-weather-img{
+        padding: 0;
+        height: 100%;
+}
+.todays-weather-img img{
+    height: 100%;
+    
+}
+.todays-weather-info{
+    justify-content: space-between;
+}
+.todays-weather-info h1{
+    font-size: 1.5em;
+}
+.todays-weather-temp{
+    font-size: 3em;
+    
+}
 }

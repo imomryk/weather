@@ -47,3 +47,24 @@
     padding-top: 5px;
 
 }
+.show-on-mobile{
+    display: none;
+}
+@media screen and (max-width: 480px){
+    .todays-air-conditions-elem img{
+    align-self: flex-start;
+    width: 25px;
+}
+.todays-air-conditions-elem-info{
+    margin-left: 5px;
+}
+.todays-air-conditions-elem-info>h4{
+    font-size: 1.2em;
+}
+.todays-air-conditions-elem-info>div{
+    font-size: 1.7em;
+}
+.show-on-mobile{
+    display: block;
+}
+}

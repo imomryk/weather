@@ -29,3 +29,20 @@
     border: 0;
 
 }
+
+@media screen and (max-width: 480px){
+    .todays-forecast-days{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 40px;
+        padding: 20px 5px;
+    }
+    .todays-forecast-days>div{
+        border-right: 0;
+    border-bottom: 1px solid #e7e7e770;
+}
+
+.todays-forecast-days>div:last-child, .todays-forecast-days>div:nth-child(5){
+    border: 0;
+}
+}

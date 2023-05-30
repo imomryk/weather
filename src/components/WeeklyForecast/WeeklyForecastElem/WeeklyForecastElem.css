@@ -38,3 +38,15 @@
 .weekly-forecast-elem-temp span{
     opacity: 0.5;
 }
+@media screen and (max-width: 480px){
+    .weekly-forecast-elem-day{
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+.weekly-forecast-elem-condition div{
+    font-size: 1.2em;
+}
+.weekly-forecast-elem-temp{
+    font-size: 1.2em;
+}
+}

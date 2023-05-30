@@ -49,7 +49,9 @@ export const TodaysAirConditions = ({
 						alt='UV icon'
 					/>
 					<div className='todays-air-conditions-elem-info'>
-						<h4>UV index</h4>
+						<h4>
+							UV <br className='show-on-mobile'></br>index
+						</h4>
 						<div>{uv}</div>
 					</div>
 				</div>
